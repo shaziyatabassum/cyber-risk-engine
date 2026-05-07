@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER */
+.container, .result-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* INPUT BOX */
+input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 2px solid #4CAF50;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4CAF50;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* RISK COLORS */
+.low {
+    color: green;
+    font-weight: bold;
+}
+
+.medium {
+    color: orange;
+    font-weight: bold;
+}
+
+.high {
+    color: red;
+    font-weight: bold;
+}
+
+/* LIST */
+ul {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* RESULT BOX IMPROVEMENT */
+.result-container h2 {
+    margin-top: 15px;
+}
+
+/* BACK BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #333;
+}

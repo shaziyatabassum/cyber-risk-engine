@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cyber Risk Scoring Engine</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔐 Cyber Risk Scoring Engine</h1>
+
+    <p>Enter a website URL to analyze its security risk</p>
+
+    <!-- FORM -->
+    <form action="/check" method="post">
+
+        <input type="text" name="url" placeholder="Enter website URL (https://example.com)" required>
+
+        <br><br>
+
+        <button type="submit">Check Risk</button>
+
+    </form>
+
+    <br>
+
+    <!-- OPTIONAL INFO -->
+    <p style="font-size:14px; color:gray;">
+        This system checks phishing indicators like HTTPS, suspicious keywords, and URL structure.
+    </p>
+
+</div>
+
+</body>
+
+</html>

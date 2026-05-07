@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cyber Risk Report</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>🔐 Cyber Risk Analysis Report</h1>
+
+    <hr>
+
+    <!-- URL -->
+    <h3>Analyzed URL:</h3>
+    <p class="url"><b>{{ url }}</b></p>
+
+    <hr>
+
+    <!-- SCORE -->
+    <h2>
+        Risk Score:
+        <span style="color: {{ color }};">
+            {{ score }}/100
+        </span>
+    </h2>
+
+    <!-- LEVEL -->
+    <h2>
+        Risk Level:
+        <span style="color: {{ color }};">
+            {{ level }}
+        </span>
+    </h2>
+
+    <hr>
+
+    <!-- REASONS -->
+    <h3>Detected Security Issues:</h3>
+
+    {% if reasons %}
+        <ul>
+            {% for reason in reasons %}
+                <li>{{ reason }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p style="color:green;">No major issues detected.</p>
+    {% endif %}
+
+    <br>
+
+    <!-- BUTTON -->
+    <a href="/" class="btn">🔁 Check Another URL</a>
+
+</div>
+
+</body>
+
+</html>
